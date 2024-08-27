@@ -8,11 +8,14 @@ AtomEngine is built to handle both 2D and 3D game development, offering a flexib
 
 ## KEY CONCEPTS
 
-User-Friendly Interface: AtomEngine boasts a clean and accessible interface that simplifies the game design process, making it easier to visualize and manipulate game elements.
-Powerful Editing Tools: With a robust suite of authorship tools, AtomEngine allows for deep customization and control over entities and game mechanics, enabling developers to create intricate gameplay experiences. This suite of tools includes, but is not limited to, the Entity Authorship tool, the Behavior Authorship tool, a Scenario Creation Wizard, and a flexible injects system to drive custom events. (Please note that many of these tools are still in development and are not yet user-facing.)
-Asset Management: Efficient asset management tools help you organize, import, and utilize game assets effectively, ensuring a smooth development workflow.
+**User-Friendly Interface:** AtomEngine boasts a clean and accessible interface that simplifies the game design process, making it easier to visualize and manipulate game elements.
+
+**Powerful Editing Tools:** With a robust suite of authorship tools, AtomEngine allows for deep customization and control over entities and game mechanics, enabling developers to create intricate gameplay experiences. This suite of tools includes, but is not limited to, the Entity Authorship tool, the Behavior Authorship tool, a Scenario Creation Wizard, and a flexible injects system to drive custom events. (Please note that many of these tools are still in development and are not yet user-facing.)
+
+**Asset Management:** Efficient asset management tools help you organize, import, and utilize game assets effectively, ensuring a smooth development workflow.
 Cross-Platform Support: AtomEngine supports multiple platforms, allowing you to deploy your wargame across various devices and operating systems with minimal adjustments.
-Functional Terrain: AtomEngine adjudicates many systems using a three-dimensional terrain model consisting of dozens of terrain classifications. These classifications and elevation maps have a direct impact on entity movement and capabilities, line of sight calculations, radar masking, weather patterns, and more.
+
+**Functional Terrain:** AtomEngine adjudicates many systems using a three-dimensional terrain model consisting of dozens of terrain classifications. These classifications and elevation maps have a direct impact on entity movement and capabilities, line of sight calculations, radar masking, weather patterns, and more.
 
 
 ## LOGGING IN 
