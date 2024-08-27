@@ -122,7 +122,7 @@ Attaching is performed by selecting the ground entity you would like to attach t
 
 Detaching is performed by selecting the ground entity you would like to detach from the Composition tab of the Entity Details Panel of the entity it is currently a part of. Right clicking valid terrain will allow the use of the Detach command and will determine the location the detaching entity will move to. 
 
-
+![image021](https://github.com/user-attachments/assets/90cf1abe-d869-4ed4-aff6-54e4e014b2ab)
 
 Dock/Undock 
 Naval type entities can enter and leave entities with subtype Port utilizing the context menu commands Sail Into and Disembark.  
@@ -132,17 +132,25 @@ The Disembark command is available when right-clicking valid terrain with a Nava
 Tip: Cancelling Assigned Commands 
 Any currently active or assigned command can be cancelled by selecting the entity performing or set to perform the command, then pressing the LEFT CTRL key.  
 
+
+
 TACTICAL MISSIONS
 
 Tactical Missions are orders given to entities with a predefined set of behaviors applied to them. There are two primary types of Tactical Missions: Area Missions, and Targeted Missions. 
 Targeted Missions are easy to assign. Simply select a unit and right click on an enemy to see the possible Tactical Missions that can be performed against that target.
 Tip: Anytime a context menu option is unavailable, you can hover the mouse over it for a description of why it’s not possible.
-Image
+
+![image023](https://github.com/user-attachments/assets/6e5f9785-a165-473e-b353-ac8c9ffb472a)
+
 Area Missions require a defined area for the entity AI to operate within. In AtomEngine we call these Polygon Regions. To create a Polygon Region, select the Polygon Draw tool from the toolbar on the left edge of the viewport.
-Image
+
+![image025](https://github.com/user-attachments/assets/ed4793dd-df2f-463d-9925-6c515e10ef66)
+
 Once you have selected the tool, click anywhere on the globe to add points until you have your desired shape and then click the first point you made to complete the polygon. Now you should see an orange shape on the screen indicating your polygon. Select the entity you want to conduct the tactical mission, then right click the polygon to bring up the context menu. Hover over Tactical Missions and choose the one you want. 
 Tip: Right-click with any tool selected to clear it and return to the standard selection tool.
-Image
+
+![image027](https://github.com/user-attachments/assets/c34e9ce6-1bee-4683-a750-59c7a3702a82)
+
 
 Now when you hit play you should see the entity take a few moments to head out and then conduct their tactical mission in the Polygon you have created. You can create multiple Polygons at any time for multiple missions if you want to create complex courses of action with multiple entities. 
 
@@ -156,15 +164,22 @@ Mission types and their requirements:
 
 To create an air mission, first select the airbase the entities are located at, then under the children panel find the squadron you wish to deploy. Left click on them to select them.
 
+![image029](https://github.com/user-attachments/assets/c36ba3b8-8bc2-4e2a-8ef8-7b3250a8940e)
+
 With the squadron selected, right click anywhere on the map to order them on an air mission following the same steps from the Tactical Missions section once you see the context menu. 
-Image
+
+![image031](https://github.com/user-attachments/assets/b011ce6a-6b5f-466b-a1e3-d73662b585c2)
 
 ENGAGEMENTS
 
 Combat between entities in AtomEngine happens through Engagements. When an entity with one or more weapons comes within range of an enemy and meets a number of other required conditions such as having line of sight to the target, an engagement is automatically created to that target. 
 
+![image033](https://github.com/user-attachments/assets/8ae0f9e0-44eb-4ea6-9df6-b88d89ab60fa)
+
 As long as an engagement persists, damage is constantly applied to the defending unit every simulated second. The amount of damage inflicted is calculated based on a ratio of relative combat power between the attacker’s weapons and the defender’s resistances.
 Tip: Direct fire weapons will create a flat line to the target, while indirect fires will create a parabolic line. The specific weapons participating in the engagement can be seen by hovering over either of these engagement lines.
+
+![image035](https://github.com/user-attachments/assets/8a1c77d4-88f2-4430-b489-e49592003be6)
 
 By default, entities will automatically engage enemies that are detected and within range. To engage a specific unit, follow similar steps to the Tactical Missions section. First select the entity you want to conduct the attack, and then right click on the enemy you wish to engage. Go into the tactical missions menu and select the appropriate action. 
 
@@ -172,31 +187,41 @@ LOGISTICS
 
 Currently AtomEngine operates on automated supply networks consisting of Providers and Requesters. When units hit a designated supply threshold, they will automatically call for sustainment convoys from the nearest supply point which can provide the requested cargo. 
 
+![image037](https://github.com/user-attachments/assets/1f4b76ea-815a-4e8b-8a45-8c423c9c89e5)
+
 A Supply Convoy automatically dispatched to deliver ammunition to the front. Note the cargo displayed in composition tab of the Entity Details Panel on the right.
 
 In order to setup up simple, ground-based supply networks you only need to place down the supply points on the globe where you want them and let the automatic behaviors do the rest for you. 
 
 Cargo can also be transferred manually between two entities. To do this, select a unit and right-click on a nearby friendly unit. From the context menu select Logistics -> Initiate Cargo Transfer. The initiating entity will then move to the targeted entity and open the logistics window.
 
+![image039](https://github.com/user-attachments/assets/79f3eb51-3513-4505-8996-99e510dbb952)
+
 In the Trade Subject portion of the trade window you can select which two entities within their parent units are going to trade cargo. After selecting entities, the Cargo Items section will be populated with all the cargo that each of the two entities is carrying. From here you can choose to send items between entity A and entity B, with information detailing the weight, carrying capacity, and time required for the transfer. When the trade is configured, select Complete Trade and the entities will begin the exchange.
-Image
+
+![image041](https://github.com/user-attachments/assets/4ae52d71-5092-44eb-93b2-71594cb58dbf)
 
 
 BRANCHING SAVES
 
 AtomEngine has the capability to pause the sim and save a branch of the timeline for later execution or during instride wargaming to test different courses of action. Simply pause the simulation at the appropriate time you want to create a branch, go to the bottom left of your screen to the Timeline panel, and click on the Create Branch button.
 
+![image043](https://github.com/user-attachments/assets/037facfd-12ac-40ea-9df0-a698913ed91b)
+
 You can then jump freely between save nodes on either of the displayed timelines and the game state will update accordingly. However if you attempt to load any save node while there are unsaved changes to the game state, the viewport will be dimmed and you’ll be presented with this confirmation popup. 
-Image
+
+![image045](https://github.com/user-attachments/assets/1c409b11-da8f-4fb0-ad38-945c4d95da60)
 
 Project files contain all the branches in that project, with all of their individual game states preserved. Loading a project that contains branches will default to showing the Origin and an empty secondary timeline. Selecting the empty secondary timeline title will open the Load Branch window, where you can find and select branches previously created. You can also rename and delete branches from this window. Note that the Origin cannot be renamed or deleted, but it can be deselected in favor of displaying two different branches, if desired.
-Image 
+
+![image047](https://github.com/user-attachments/assets/85d8bad9-4d2f-4d1f-85de-5638e322cf46)
 
 ENTITIES
 
 Entities are the basic element of every interactive thing in AtomEngine, from battalions and airfields to vehicles and weapons. Every entity is made up of a collection of components, which give it all of its capabilities and relationships to other entities.
 Entities can be combined to create complex hierarchical structures. These hierarchies always have a single Root Entity at the top, and can have an unlimited number of children, grandchildren, etc.
-ImageExample of a Rifle Platoon entity hierarchy
+
+![image049](https://github.com/user-attachments/assets/abe6b9da-f501-4f27-9b7d-2ac0d02b678d)
 
 SHUTDOWN PROCEDURE 
 
