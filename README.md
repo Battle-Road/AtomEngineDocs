@@ -59,18 +59,18 @@ Viewport quick-access buttons
 
 ![Screenshot 2024-08-26 165801](https://github.com/user-attachments/assets/405a74c6-9ab8-4225-90e3-bb0b24f73467)
 
-A.	Compass – Resets the camera’s rotation to default 
-B.	Top View – Resets the camera’s pitch to default 
-C.	Team Selector – Dropdown list that allows a user to change their team. This is only available to admins and scenario authors to update their viewport to show only what the selected team can currently see. This also prevents the user from issuing commands to entities belonging to other teams. 
-D.	Entity Insignia Display – Choose whether to display entities as mil2525D insignias, or to display the name of the entity. 
-E.	Entity Health Bar – Toggle visibility. 
-F.	Entity Location Dot – Toggle visibility of a very small white dot on the surface of the earth directly below the center of every entity. Useful for visualizing the exact location of airborne entities. 
-G.	Entity Orientation Arrow – Toggle visibility. 
-H.	Entity Flanking Angles – Toggle visibility. 
-I.	Global Grid – Toggle visibility. 
-J.	Global Administrative Layer – Toggle visibility of national/municipal boundaries and labels. 
-K.	Global Illumination – Toggle time-based illumination on/off. 
-L.	Settings Menu – Open the Settings Menu. 
+1.	Compass – Resets the camera’s rotation to default (A)
+2.	Top View – Resets the camera’s pitch to default (B)
+3.	Team Selector – Dropdown list that allows a user to change their team. This is only available to admins and scenario authors to update their viewport to show only what the selected team can currently see. This also prevents the user from issuing commands to entities belonging to other teams. (C)
+4.	Entity Insignia Display – Choose whether to display entities as mil2525D insignias, or to display the name of the entity. (D)
+5.	Entity Health Bar – Toggle visibility. (E)
+6.	Entity Location Dot – Toggle visibility of a very small white dot on the surface of the earth directly below the center of every entity. Useful for visualizing the exact location of airborne entities. (F)
+7.	Entity Orientation Arrow – Toggle visibility. (G)
+8.	Entity Flanking Angles – Toggle visibility. (H)
+9.	Global Grid – Toggle visibility. (I)
+10.	Global Administrative Layer – Toggle visibility of national/municipal boundaries and labels. (J)
+11.	Global Illumination – Toggle time-based illumination on/off. (K)
+12.	Settings Menu – Open the Settings Menu. (L)
 
 ## NECESSARY LAYERS
 
