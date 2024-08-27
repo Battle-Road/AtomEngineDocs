@@ -1,11 +1,13 @@
 # AtomEngineDocs
 
 INTRODUCTION TO ATOM-ENGINE
+
 Welcome to the AtomEngine documentation! AtomEngine, developed by Battle Road Digital, is a versatile and robust wargame development engine designed to empower orgnanizations with the tools needed to bring their ideas to life. Whether you're a seasoned wargamer or just starting out, AtomEngine provides a comprehensive suite of features to streamline the creation process.
 
 AtomEngine is built to handle both 2D and 3D game development, offering a flexible environment that supports a wide range of game genres and styles. Its intuitive interface and powerful scripting capabilities make it accessible to developers of all skill levels, while its advanced features cater to those with more specific needs.
 
 KEY CONCEPTS
+
 User-Friendly Interface: AtomEngine boasts a clean and accessible interface that simplifies the game design process, making it easier to visualize and manipulate game elements.
 Powerful Editing Tools: With a robust suite of authorship tools, AtomEngine allows for deep customization and control over entities and game mechanics, enabling developers to create intricate gameplay experiences. This suite of tools includes, but is not limited to, the Entity Authorship tool, the Behavior Authorship tool, a Scenario Creation Wizard, and a flexible injects system to drive custom events. (Please note that many of these tools are still in development and are not yet user-facing.)
 Asset Management: Efficient asset management tools help you organize, import, and utilize game assets effectively, ensuring a smooth development workflow.
@@ -14,6 +16,7 @@ Functional Terrain: AtomEngine adjudicates many systems using a three-dimensiona
 
 
 LOGGING IN 
+
 For Local Installation of AtomEngine, please go to the installation folder you've extracted the build to and find the AtomEngine.exe pictured below. Double click on it to run the AtomEngine application. 
 
 ![Screenshot 2024-08-26 123113](https://github.com/user-attachments/assets/03acbf7e-0098-4a4b-8fa6-0ef5a25cbdf0)
@@ -23,6 +26,7 @@ After running the application, a window should appear with a number of selectabl
 ![Screenshot 2024-08-26 123316](https://github.com/user-attachments/assets/665c1ff9-4592-49c9-b60a-ebe6bd40e8a3)
 
 CREATING A PROJECT
+
 There are two ways to create a new project. The first is the “Quick New” button, which instantly creates a new project with default settings, and the project will be automatically named as “project-date-timestamp" 
 The second method is the “Create New” button. This path will provide an option to name and configure some starting parameters for this project, such as a date and time for the beginning of the simulation. 
 Both methods will automatically add the new project to the list of saved projects in the launch window.
@@ -30,16 +34,19 @@ Both methods will automatically add the new project to the list of saved project
 ![Screenshot 2024-08-26 123427](https://github.com/user-attachments/assets/c8aefe0d-a790-4179-aaf0-cd64ea33e747)
 
 SAVING A PROJECT
+
 In AtomEngine, a project is a collection of all the saved game states on the timeline, both on the origin and on any branches. Therefore, saving the current game state is the same as saving the project.
 To save the game state, press the save button on the left-most edge of the timeline panel corresponding to the Origin or currently active branch. This will create a save node at the current location of the playhead on the active timeline. Additionally, you can see if you have unsaved changes on the timeline by the line appearing as a teal color rather than white.
 
 AtomEngine also autosaves the game state when certain actions are taken, such as changing the time scale or creating a branch while unsaved changes are present. Just like manual saves, these autosaves will appear as save nodes on the timeline.
 
 LOADING A PROJECT
+
 A project can be loaded from the “Load Saved Project” list in the launch window. Keep in mind that a project with no saved game states can be loaded, but it will appear as if it were a new blank project.
 Also, from the Project List menu you can load, rename, or delete existing projects. 
 
 INITIAL ORIENTATION
+
 The Viewport is where location and spatial relationships are visualized, and where most user commands are issued to simulated entities. By default, a new project will have the entire globe visible in the Viewport.  
 Controlling the camera 
 ⦁	Left-click and drag anywhere on the globe to pan the camera. 
@@ -66,6 +73,7 @@ K.	Global Illumination – Toggle time-based illumination on/off.
 L.	Settings Menu – Open the Settings Menu. 
 
 NECESSARY LAYERS
+
 All new scenarios or "projects" require data layers for entities to be able to move around and conduct behaviors. We call these layers "vectors" or Nav Mesh Tiles. Click on the Globe Icon in the top left, then the "Vector" tab. You can see a number of layers to load, but for a sample example please find the "Taiwan_Only.geojson" and "navmesh_global_ocean_canals.geojson" and click on the slider to their left to load them. 
 
 You should see the AtomEngine logo and a loading screen each time you do this. The program is loading the requested data. Now let's make sure we have those layers loaded by checking the "Draw Loaded Layers" box on the bottom. 
@@ -75,6 +83,7 @@ You should see the AtomEngine logo and a loading screen each time you do this. T
 We can now see that we have layers loaded indicated by the various colors on the screen. You can think of this as the heatmap for our geospatial data that you are loading in, but the colors also represent things like classification of data types, like the difference in terrain between a swamp or a hill. 
 
 FORCE DEPLOYMENT
+
 Now that we have a sample project created with our navmesh tiles loaded, let's look at adding some forces to the battlespace. 
 
 Let's start with adding a preloaded template of forces. Look to the right of the screen, you should see the Forces panel for Blue Team and Red Team respectively. Click on Blue Team, then just below it you will see folders. Select the Military Entities Folder and then click on "Auto-Deploy Selection". 
