@@ -1,13 +1,11 @@
 # AtomEngineDocs
 
 INTRODUCTION TO ATOM-ENGINE
-
 Welcome to the AtomEngine documentation! AtomEngine, developed by Battle Road Digital, is a versatile and robust wargame development engine designed to empower orgnanizations with the tools needed to bring their ideas to life. Whether you're a seasoned wargamer or just starting out, AtomEngine provides a comprehensive suite of features to streamline the creation process.
 
 AtomEngine is built to handle both 2D and 3D game development, offering a flexible environment that supports a wide range of game genres and styles. Its intuitive interface and powerful scripting capabilities make it accessible to developers of all skill levels, while its advanced features cater to those with more specific needs.
 
 KEY CONCEPTS
-
 User-Friendly Interface: AtomEngine boasts a clean and accessible interface that simplifies the game design process, making it easier to visualize and manipulate game elements.
 Powerful Editing Tools: With a robust suite of authorship tools, AtomEngine allows for deep customization and control over entities and game mechanics, enabling developers to create intricate gameplay experiences. This suite of tools includes, but is not limited to, the Entity Authorship tool, the Behavior Authorship tool, a Scenario Creation Wizard, and a flexible injects system to drive custom events. (Please note that many of these tools are still in development and are not yet user-facing.)
 Asset Management: Efficient asset management tools help you organize, import, and utilize game assets effectively, ensuring a smooth development workflow.
@@ -16,17 +14,20 @@ Functional Terrain: AtomEngine adjudicates many systems using a three-dimensiona
 
 
 LOGGING IN 
-
 For Local Installation of AtomEngine, please go to the installation folder you've extracted the build to and find the AtomEngine.exe pictured below. Double click on it to run the AtomEngine application. 
+
+![Screenshot 2024-08-26 123113](https://github.com/user-attachments/assets/03acbf7e-0098-4a4b-8fa6-0ef5a25cbdf0)
 
 After running the application, a window should appear with a number of selectable options. Please choose the "Headless" config option and click "Log In".
 
+![Screenshot 2024-08-26 123316](https://github.com/user-attachments/assets/665c1ff9-4592-49c9-b60a-ebe6bd40e8a3)
 
 CREATING A PROJECT
 There are two ways to create a new project. The first is the “Quick New” button, which instantly creates a new project with default settings, and the project will be automatically named as “project-date-timestamp" 
 The second method is the “Create New” button. This path will provide an option to name and configure some starting parameters for this project, such as a date and time for the beginning of the simulation. 
 Both methods will automatically add the new project to the list of saved projects in the launch window.
 
+![Screenshot 2024-08-26 123427](https://github.com/user-attachments/assets/c8aefe0d-a790-4179-aaf0-cd64ea33e747)
 
 SAVING A PROJECT
 In AtomEngine, a project is a collection of all the saved game states on the timeline, both on the origin and on any branches. Therefore, saving the current game state is the same as saving the project.
@@ -39,16 +40,17 @@ A project can be loaded from the “Load Saved Project” list in the launch win
 Also, from the Project List menu you can load, rename, or delete existing projects. 
 
 INITIAL ORIENTATION
-
-The Viewport 
-
 The Viewport is where location and spatial relationships are visualized, and where most user commands are issued to simulated entities. By default, a new project will have the entire globe visible in the Viewport.  
 Controlling the camera 
 ⦁	Left-click and drag anywhere on the globe to pan the camera. 
 ⦁	Scroll the mouse wheel to zoom in and out. 
 ⦁	Press and hold the mouse wheel button while moving the mouse to control camera pitch and rotation. 
 
+![Screenshot 2024-08-26 165719](https://github.com/user-attachments/assets/191ae85f-a81f-49bd-8cf3-e489d23f650e)
+
 Viewport quick-access buttons 
+
+![Screenshot 2024-08-26 165801](https://github.com/user-attachments/assets/405a74c6-9ab8-4225-90e3-bb0b24f73467)
 
 A.	Compass – Resets the camera’s rotation to default 
 B.	Top View – Resets the camera’s pitch to default 
@@ -64,26 +66,32 @@ K.	Global Illumination – Toggle time-based illumination on/off.
 L.	Settings Menu – Open the Settings Menu. 
 
 NECESSARY LAYERS
-
 All new scenarios or "projects" require data layers for entities to be able to move around and conduct behaviors. We call these layers "vectors" or Nav Mesh Tiles. Click on the Globe Icon in the top left, then the "Vector" tab. You can see a number of layers to load, but for a sample example please find the "Taiwan_Only.geojson" and "navmesh_global_ocean_canals.geojson" and click on the slider to their left to load them. 
 
 You should see the AtomEngine logo and a loading screen each time you do this. The program is loading the requested data. Now let's make sure we have those layers loaded by checking the "Draw Loaded Layers" box on the bottom. 
 
+![Screenshot 2024-08-26 124635](https://github.com/user-attachments/assets/93235d38-38f9-4bdb-bf6e-597ef771f686)
+
 We can now see that we have layers loaded indicated by the various colors on the screen. You can think of this as the heatmap for our geospatial data that you are loading in, but the colors also represent things like classification of data types, like the difference in terrain between a swamp or a hill. 
 
 FORCE DEPLOYMENT
-
 Now that we have a sample project created with our navmesh tiles loaded, let's look at adding some forces to the battlespace. 
 
 Let's start with adding a preloaded template of forces. Look to the right of the screen, you should see the Forces panel for Blue Team and Red Team respectively. Click on Blue Team, then just below it you will see folders. Select the Military Entities Folder and then click on "Auto-Deploy Selection". 
 
 You should see Blue Forces populate on Taiwan, Georgia, and some sustainment in Guam. Now do the same thing but for the Red Team panel, following the same steps. 
 
+![Screenshot 2024-08-26 130948](https://github.com/user-attachments/assets/21f680f7-f519-47f6-82b5-d567a3db9c12)
+
 The forces panel is separated into "Equipment" and "Task Organizations". You can think of equipment as munitions and weapon systems while Task Organizations are the playable entities that you select and give orders too. 
 
 If you click on the dropdown arrow next to the Military Entities tab you can see this displayed.
 
+![Screenshot 2024-08-26 131324](https://github.com/user-attachments/assets/a63c9f11-1bb5-4b86-9388-2c1df275b0ed)
+
 To deploy an entity from this last, it's as easy as clicking and dragging. Find the below vessel and click and drag somewhere on the map to place it there
+
+![Screenshot 2024-08-26 131638](https://github.com/user-attachments/assets/22c5efe8-be95-4066-8725-3373dcf05bb2)
 
 You should now see the USS Dewey wherever you placed it. To delete the entity, select it and press the delete key on your keyboard. To duplicate an entity, you select it and press the D key on your keyboard. It is important to note that currently you can only duplicate entities to place multiple of the same one and cannot keep dragging it out from the forces panel onto the map. 
 
@@ -94,6 +102,8 @@ Issuing movement orders to ground and maritime entities are the same (Air will b
 You can also chain movements by selecting the entity again and making additional movement orders. 
 
 Tip: These pathfinding commands can also be selected from the toolbar on the left edge of the viewport. Currently Maritime entities can only use Q and E hotkeys for movement. 
+
+![Screenshot 2024-08-26 163944](https://github.com/user-attachments/assets/85f1f6c3-1548-4b05-bf08-221083536f3a)
 
 Additional Movement
 
